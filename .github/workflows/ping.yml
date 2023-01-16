@@ -4,5 +4,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  ping:
-    uses: codezninja/pong/.github/workflows/pong.yml@main
+  pong:
+    runs-on: ubuntu-latest
+    steps:
+     - name: call pong 
+       uses: convictional/trigger-workflow-and-wait@v1.6.1
+       with:
+         owner: codezninja
+         repo: pong
+         workflow_file_name: pong.yml
+         github_token: ${{ secrets.GITHUB_PAT }}
