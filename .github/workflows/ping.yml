@@ -13,4 +13,4 @@ jobs:
          owner: codezninja
          repo: pong
          workflow_file_name: pong.yml
-         github_token: ${{ secrets.GITHUB_PAT }}
+         github_token: ${{ secrets.PAT }}
