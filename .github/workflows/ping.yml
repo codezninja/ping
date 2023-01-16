@@ -4,8 +4,5 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: codezninja/pong/.github/workflows/pong.yml@main
+  ping:
+    uses: codezninja/pong/.github/workflows/pong.yml@main
